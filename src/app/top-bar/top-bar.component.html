@@ -1,8 +1,24 @@
 <a [routerLink]="['/']">
-  <h1>My Store</h1>
+	<h1>My Store</h1>
 </a>
 
-<a routerLink = "/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<!--div [style]="'color:white'">
+	Today's Dates: {{date}}
+	</div-->
+<br/>
+<!--div [style]="'color:white'">
+		Today's Dates: {{date | date}}
+	</div-->
+
+<div [style]="'color:white'">
+	Today's Dates: {{date | date:format()}}
+</div>
+
+<button [style] = "'background-color:blue'" (click) = "toggleFormat()"> 
+  Toggle Date
+</button>
+
+<a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
