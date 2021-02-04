@@ -1,10 +1,17 @@
 <h3>Cart</h3>
 <p>
-  <a routerLink = "/shipping"> Shipping Prices</a>
+	<a routerLink="/shipping"> Shipping Prices</a>
 </p>
 
+<p>
+	<a routerLink="/error">Error: RouteLink Example</a>
+</p>
 
-<div *ngFor = "let item of items">
-  <span> {{ item.name }} </span>
-  <span> {{ item.price | currency }} </span>
+<p>
+	<a (click)="routeToPNF()">Page-Not-Found: Route Click Example</a>
+</p>
+
+<div *ngFor="let item of items">
+	<span> {{ item.name }} </span>
+	<span> {{ item.price | currency }} </span>
 </div>
