@@ -14,6 +14,7 @@ import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { ErrorComponent } from "./error/error.component";
+import { DoublePipe } from './double.pipe';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { ErrorComponent } from "./error/error.component";
     CartComponent,
     ShippingComponent,
     PageNotFoundComponent,
-    ErrorComponent
+    ErrorComponent,
+    DoublePipe
   ],
   bootstrap: [AppComponent],
   providers: [CartService]
