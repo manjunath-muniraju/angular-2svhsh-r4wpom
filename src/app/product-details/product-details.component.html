@@ -3,7 +3,7 @@
 <div>
   <h3>Product Name: {{ product.name }}</h3>
   <h4>Discount Price: {{ product.price | currency }}</h4>
-  <h4>Acutal Price: {{ product.price | double | currency }}</h4>
+  <h4 [style]="'text-decoration: line-through'">Acutal Price: {{ product.price | double | currency }}</h4>
   <p> {{ product.description }}</p>
 
   <button (click) = "addToCart(product)">Add To Cart</button>
